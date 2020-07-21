@@ -1,0 +1,21 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, build with `go example -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+/.idea
+/.DS_Store
+/conf/.DS_Store
+/config/server.json
+/config/config.yaml
+/log/*
+/msg/.DS_Store
+/leafserver

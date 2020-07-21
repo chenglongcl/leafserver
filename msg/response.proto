@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package msg;
+
+option go_package = ".;msg";
+
+import "google/protobuf/any.proto";
+
+message MsgHeaders {
+  string msgName = 1;
+}
+
+message SCResponse {
+  int32 code = 1;
+  string message = 2;
+  MsgHeaders msgHeaders = 3;
+  google.protobuf.Any data = 4;
+}

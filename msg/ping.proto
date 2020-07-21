@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package msg;
+
+option go_package = ".;msg";
+
+message CSPing {
+
+}
+
+message SCPong{
+  int64 timestamp = 1;
+}

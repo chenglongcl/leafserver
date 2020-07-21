@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package msg;
+
+option go_package = ".;msg";
+
+message CSUserLogin {
+  int32 roomID = 1;
+}
+
+message SCUserLogin {
+  int32 roomID = 1;
+  string connUUID = 2;
+}

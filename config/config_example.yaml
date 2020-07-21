@@ -1,0 +1,14 @@
+runmode: debug                 # 开发模式, debug, release, test
+name: leafServer              # Server的名字
+jwt_secret:
+jwt_exp:  #过期时间单位秒
+jwt_refresh_exp: 1296000 #可刷新令牌时间单位秒
+log:
+  writers: file,stdout
+  logger_level: DEBUG
+  logger_file: log/leafServer.log
+  log_format_text: false
+  rollingPolicy: size
+  log_rotate_date: 1
+  log_rotate_size: 10240
+  log_backup_count: 7

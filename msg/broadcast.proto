@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package msg;
+
+option go_package = ".;msg";
+
+message CSBroadcastMultiple {
+  MsgType msgType = 1;
+  string text = 2;
+  string image = 3;
+  string video = 4;
+}
+
+message SCBroadcastMultiple {
+  MsgType msgType = 1;
+  string source = 2;
+  string text = 3;
+  string image = 4;
+  string video = 5;
+}
+
+enum MsgType{
+  TEXT = 0;
+  IMAGE = 1;
+  VIDEO = 2;
+}
